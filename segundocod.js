@@ -4,9 +4,9 @@ function texto(x) {
         if (l == "1") {
             if (cadastros.indexOf(x) < 0) {
                 if (tent > 1) {
-                    alert('Você não existe no nosso sistema, você possui mais '+tent+' tentativas.')
+                    alert('Você não existe no nosso sistema, você possui mais ' + tent + ' tentativas.')
                 } else if (tent > 0) {
-                    alert('Você não parece saber o que está fazendo, você possui mais '+tent+' tentativa.')
+                    alert('Você não parece saber o que está fazendo, você possui mais ' + tent + ' tentativa.')
                 } else {
                     alert('Suas tentativas acabarm, Adeus.')
                 }
@@ -31,20 +31,23 @@ function texto(x) {
                 else {
                     tananan = cadastros.indexOf(x)
                 }
-                if (Senhas[tananan] == 'morto') {
+                if (Tags[tananan] == 'morto') {
                     alert('você já não está mais entre nós.')
                     document.getElementById('textob').value = null
                     return false
                 }
-                if (Senhas[tananan] == 'lixo') {
+                if (Tags[tananan] == 'lixo') {
                     alert('você não é bem vindo aqui.')
                     document.getElementById('textob').value = null
                     return false
                 }
-                if (Senhas[tananan] == 'inex') {
+                if (Tags[tananan] == 'inex') {
                     alert('Você já não existe mais.')
                     document.getElementById('textob').value = null
                     return false
+                }
+                if (Tags[tananan] == 'irreg') {
+                    alert('Olá forasteiro.')
                 }
                 x = ['Entrar como ' + x + '?']
             }
@@ -55,19 +58,25 @@ function texto(x) {
                 document.getElementById('textob').value = null
                 return false
             }
-            else{
+            else {
                 salvar(x)
                 document.getElementById('textob').value = null
-            if (tent > 1) {
-                alert('Você não existe no nosso sistema, você possui mais '+tent+' tentativas.')
-            } else if (tent > 0) {
-                alert('Você não parece saber o que está fazendo, você possui mais '+tent+' tentativa.')
-            } else {
-                alert('Suas tentativas acabarm, Adeus.')
+                if (tent > 1) {
+                    alert('Essa não é a sua senha, você possui mais ' + tent + ' tentativas.')
+                } else if (tent > 0) {
+                    alert('Essa também não é a sua senha, você possui mais ' + tent + ' tentativa.')
+                } else {
+                    alert('Suas tentativas acabarm, Adeus.')
+                }
+                tent--
+                if (tent < 0) {
+                    document.open()
+                    setInterval(saia, 0.000001)
+                    document.getElementById('omaga').style = "width: 0; height: 0; color: transparent; background-color = transparent;"
+                    document.getElementById('textob').value = null
+                }
+                return false
             }
-            tent--
-            return false
-        }
         }
         else if (l == "3") {
             x = [x + " é o código?"]
@@ -151,7 +160,7 @@ function salvar(x) {
         document.getElementById('mostrar').innerHTML = null
         texto('')
         document.getElementById('nmrcao').innerHTML = null
-        document.getElementById('bobor').innerHTML = 'Bem vindo agente '+cadastros[numerga]+'.'
+        document.getElementById('bobor').innerHTML = `Bem vindo agente ${cadastros[numerga]}.`
         document.getElementById('textob').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; width: 0px; height: 0px;"
         document.getElementById('Confirmar').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; color: transparent; width: 0px; height: 0px;"
         document.getElementById('botoes').style = "width: 0;"
@@ -177,12 +186,20 @@ function matematica(x) {
     x = ''
 }
 
-Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'Olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto','Angel Of The Night','inex','Lionel','morto','Romero','morto','fagner','morto','egnafer','morto','jefer','morto','Siqueira','irreg','lala','gl1.5asp']
 
-cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar','Angel Of The Night','angel of the night','lionel','Lionel','Romero','romero','fagner','Fagner','Egnafer','egnafer','jefferson','Jefferson','Siqueira','siqueira','Br05ki']
+
+
+Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Nível 5', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg','pardaldemaceió','irreg',]
+
+Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'Olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp','pardaldemaceió','senhadopardaldemaceió',]
+
+cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki','Br05ki','Pardaldemaceió','pardaldemaceió',]
 
 conter = 0
 tent = 2
+
+
+
 
 function saia() {
     document.write('Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n ')

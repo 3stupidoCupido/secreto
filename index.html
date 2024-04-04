@@ -51,22 +51,22 @@
       ::-webkit-scrollbar {
         width: 1px;
       }
-      
+
       /* Track */
       ::-webkit-scrollbar-track {
-        background: transparent; 
+        background: transparent;
       }
-       
+
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
       }
-      
+
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #ffffff; 
+        background: #ffffff;
       }
-      </style>
+    </style>
   </head>
   <script src="segundocod.js"></script>
   <script src="primeirocod.js"></script>
@@ -75,31 +75,34 @@
       <div class="bg2">
         <h1 id="nmrcao"></h1>
         <h3 id="bobor"></h3>
-        <div style="height: 0; width: 0; justify-content: space-around;" id="botoes">
-        <input
-          type="button"
-          class="nada"
-          id="sim"
-          onclick="salvar(document.getElementById('textob').value)"
-          value=""
-          style="
-            background-color: transparent;
-            border: 0px;
-            width: 0px;
-            height: 0px;
-          "
-        />
-        <input
-          type="button"
-          class="nada"
-          id="nao"
-          value=""
-          onclick="texto('')"
-          style="background-color: transparent; border: 0px"
-        />
-      </div>
-        <input type="text" id="textob" class="textor" autocomplete="off"/>
-        <br>
+        <div
+          style="height: 0; width: 0; justify-content: space-around"
+          id="botoes"
+        >
+          <input
+            type="button"
+            class="nada"
+            id="sim"
+            onclick="salvar(document.getElementById('textob').value)"
+            value=""
+            style="
+              background-color: transparent;
+              border: 0px;
+              width: 0px;
+              height: 0px;
+            "
+          />
+          <input
+            type="button"
+            class="nada"
+            id="nao"
+            value=""
+            onclick="texto('')"
+            style="background-color: transparent; border: 0px"
+          />
+        </div>
+        <input type="text" id="textob" class="textor" autocomplete="off" />
+        <br />
         <input
           type="button"
           value="Confirmar"
@@ -107,19 +110,21 @@
           id="confirmar"
         />
         <h4 id="mostrar"></h4>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" target="_blank"></a>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+          target="_blank"
+        ></a>
       </div>
     </div>
     <audio src="" autoplay></audio>
     <form name="refresh">
-	    <input name="visited" type="hidden" value="">
-	  </form>
+      <input name="visited" type="hidden" value="" />
+    </form>
   </body>
 </html>
 <script type="text/javascript">
   document.getElementById("nmrcao").innerHTML = 1;
   document.getElementById("bobor").innerHTML = "Usuário";
 </script>
-<script type="text/javascript">
-
-</script>
+<!-- <script type="text/javascript">
+</script> -->

@@ -1,5 +1,5 @@
 function compare(x) {
-    if (x>5) {
+    if (x > 5) {
         alert('maior que 5')
     } else if (x === '') {
         alert('preencha corretamente o campo')
