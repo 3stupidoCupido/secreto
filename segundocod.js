@@ -56,6 +56,7 @@ function texto(x) {
             if (x == Senhas[tananan]) {
                 salvar(x)
                 document.getElementById('textob').value = null
+                document.getElementById('linko').style = "background-color: black;"
                 return false
             }
             else {
@@ -162,9 +163,8 @@ function salvar(x) {
         document.getElementById('nmrcao').innerHTML = null
         document.getElementById('bobor').innerHTML = `Bem vindo agente ${cadastros[numerga]}.`
         document.getElementById('textob').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; width: 0px; height: 0px;"
-        document.getElementById('Confirmar').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; color: transparent; width: 0px; height: 0px;"
-        document.getElementById('botoes').style = "width: 0;"
-        document.getElementById('botoes').style = "height: 0;"
+        document.getElementById('Confirmar').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; color: transparent; width: 0; height: 0;"
+        document.getElementById('botoes').style = "width: 0; height: 0;"
     }
 }
 
@@ -189,11 +189,11 @@ function matematica(x) {
 
 
 
-Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Nível 5', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg','pardaldemaceió','irreg',]
+Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Nível 5', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg','pardaldemaceió','irreg','vini','irreg']
 
-Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'Olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp','pardaldemaceió','senhadopardaldemaceió',]
+Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'Olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp','pardaldemaceió','senhadopardaldemaceió','vini','071']
 
-cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki','Br05ki','Pardaldemaceió','pardaldemaceió',]
+cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki','Br05ki','Pardaldemaceió','pardaldemaceió','Maverick','maverick']
 
 conter = 0
 tent = 2

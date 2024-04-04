@@ -39,7 +39,7 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     width: 50%;
     margin-top: 10%;
     margin-left: 25%;
