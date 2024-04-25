@@ -5,13 +5,13 @@ body{
 }
 
 .bg {
-    overflow: auto;
-    position: relative;
+    overflow: auto; /*mudar?*/
+    position: relative; /*mudar btw*/
     height: 150vh;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    /*testar opções diferentes pro bg atualmente decentralizando*/
   }
   
   .bg::before {
