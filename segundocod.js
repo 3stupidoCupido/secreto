@@ -5,13 +5,16 @@ function texto(x) {
             if (cadastros.indexOf(x) < 0) {
                 if (tent > 1) {
                     alert('Você não existe no nosso sistema, você possui mais ' + tent + ' tentativas.')
+                    document.getElementById('bobor').style = "font-weight: 900; color: #3f0000;"
+                    texto('')
                 } else if (tent > 0) {
                     alert('Você não parece saber o que está fazendo, você possui mais ' + tent + ' tentativa.')
+                    document.getElementById('bobor').style = "font-weight: 900; color: #460000;"
+                    texto('')
                 } else {
                     alert('Suas tentativas acabarm, Adeus.')
                 }
                 document.getElementById('bobor').innerHTML = "Insira o codinome do usuário."
-                document.getElementById('bobor').style = "font-weight: 900; color: #3f0000;"
                 document.getElementById('tent')
                 tent--
                 if (tent < 0) {
@@ -64,8 +67,10 @@ function texto(x) {
                 document.getElementById('textob').value = null
                 if (tent > 1) {
                     alert('Essa não é a sua senha, você possui mais ' + tent + ' tentativas.')
+                    document.getElementById('bobor').style = "font-weight: 900; color: #3f0000;"
                 } else if (tent > 0) {
-                    alert('Essa também não é a sua senha, você possui mais ' + tent + ' tentativa.')
+                    alert('ESSA NÃO É A SUA SENHA, você possui mais ' + tent + ' tentativa.')
+                    document.getElementById('bobor').style = "font-weight: bold; color: #460000;"
                 } else {
                     alert('Suas tentativas acabarm, Adeus.')
                 }
@@ -78,9 +83,6 @@ function texto(x) {
                 }
                 return false
             }
-        }
-        else if (l == "3") {
-            x = [x + " é o código?"]
         }
         document.getElementById('botoes').style = "width: 60%;"
         document.getElementById('botoes').style = "height: 4vh;"
@@ -100,8 +102,9 @@ function texto(x) {
         else if (l == "2") {
             x = "Senha"
         }
-        else if (l == "3") {
-            x = "Insira o código aleatório de via única"
+        else if (l == "") {
+            //essa é a condição pra quando acaba tudo. O login aqui já foi feito.
+            logincrazy()
         }
         document.getElementById('sim').value = " "
         document.getElementById('nao').value = " "
@@ -156,12 +159,13 @@ function salvar(x) {
         document.getElementById('mostrar').innerHTML = a
         texto('')
     }
-    else {
+    else if (cont == 3) {
         document.getElementById('textob').value = null
         document.getElementById('mostrar').innerHTML = null
         texto('')
         document.getElementById('nmrcao').innerHTML = null
-        document.getElementById('bobor').innerHTML = `Bem vindo agente ${cadastros[numerga]}.`
+
+        document.getElementById('bobor').innerHTML = `Bem vindo agente ${cadastros[numerga]}, acesso de ${Nivel[tananan]}.`
         document.getElementById('textob').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; width: 0px; height: 0px;"
         document.getElementById('Confirmar').style = "background-color: transparent; border: 0px 0px 0px 0px; border-color: transparent; color: transparent; width: 0; height: 0;"
         document.getElementById('botoes').style = "width: 0; height: 0;"
@@ -169,29 +173,11 @@ function salvar(x) {
 }
 
 
-function matematica(x) {
-    y = document.getElementById('x2').value
-    if (x === '' || y === '') {
-        alert('Preencha os dois campos')
-        return false;
-    }
-    x = +x
-    y = +y
-    var divisao = x / y
-    var soma = x + y
-    var multi = x * y
-    var sub = x - y
-    final = ["a divisão é: " + divisao + "", "<br> a multiplicação é: " + multi + " ", "<br> a soma é: " + soma + " ", "<br> a subtração é: " + sub + "<br> "]
-    document.getElementById('matematicar').innerHTML = final
-    x = ''
-}
+Nivel = ['Infeliz', 'Nível 4', 'Adão', '', 'Veríssimo', 'Nível 5', 'Kaiser', '', 'Gaspar', '', 'Angel Of The Night', '', 'Lionel', '', 'Romero', '', 'fagner', '', 'egnafer', '', 'jefer', '', 'Siqueira', 'Nível 3', 'Yuri', 'Nível 3','pardaldemaceió','Nível 3','vini','Nível 3','tia iza','Nível 3']
 
+Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Chefe', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg','pardaldemaceió','irreg','vini','irreg','tia iza','irreg']
 
-
-
-Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Nível 5', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg','pardaldemaceió','irreg','vini','irreg','tia iza','irreg']
-
-Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'Olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp','pardaldemaceió','senhadopardaldemaceió','vini','071','tia iza','2206']
+Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp','pardaldemaceió','senhadopardaldemaceió','vini','071','tia iza','2206']
 
 cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki','Br05ki','Pardaldemaceió','pardaldemaceió','Maverick','maverick','bel','Bel']
 
@@ -208,4 +194,8 @@ function saia() {
         for (lele = 0; lele = Math.pow(2,112); lele++)
             document.write('Morra')
     }
+}
+
+function logincrazy(){
+    alert(Nivel)
 }
