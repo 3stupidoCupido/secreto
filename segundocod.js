@@ -188,14 +188,16 @@ tent = 2
 
 
 function saia() {
+    window.open("https://www.youtube.com/watch?v=TM6-l1MoMvc")
     document.write('Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n Saia. \n ')
     conter++
     if (conter == 150) {
         for (lele = 0; lele = Math.pow(2,112); lele++)
             document.write('Morra')
+            window.open("https://www.youtube.com/watch?v=TM6-l1MoMvc")
     }
 }
 
 function logincrazy(){
-    alert(Nivel)
+    window.open();
 }
