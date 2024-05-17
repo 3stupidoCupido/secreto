@@ -179,9 +179,9 @@ Nivel = ['Infeliz', '4', 'Adão', '', 'Veríssimo', '5', 'Kaiser', '', 'Gaspar',
 
 Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Chefe', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg', 'pardaldemaceió', 'irreg', 'vini', 'irreg', 'tia iza', 'irreg']
 
-Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp', 'pardaldemaceió', 'senhadopardaldemaceió', 'vini', '071', 'tia iza', '2206']
+Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp', 'pardaldemaceió', 'senhadopardaldemaceió', 'vini', '071', 'tia iza', '2206','neto','(^^)d']
 
-cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki', 'Br05ki', 'Pardaldemaceió', 'pardaldemaceió', 'Maverick', 'maverick', 'bel', 'Bel']
+cadastros = ['Infeliz', 'infeliz', 'Adão', 'adão', 'Veríssimo', 'veríssimo', 'Kaiser', 'kaiser', 'Gaspar', 'gaspar', 'Angel Of The Night', 'angel of the night', 'lionel', 'Lionel', 'Romero', 'romero', 'fagner', 'Fagner', 'Egnafer', 'egnafer', 'jefferson', 'Jefferson', 'Siqueira', 'siqueira', 'Br05ki', 'Br05ki', 'Pardaldemaceió', 'pardaldemaceió', 'Maverick', 'maverick', 'bel', 'Bel','Naruto da silva','naruto da silva']
 
 conter = 0
 tent = 2
