@@ -175,9 +175,9 @@ function salvar(x) {
 }
 
 
-Nivel = ['Infeliz', '4', 'Adão', '', 'Veríssimo', '5', 'Kaiser', '', 'Gaspar', '', 'Angel Of The Night', '', 'Lionel', '', 'Romero', '', 'fagner', '', 'egnafer', '', 'jefer', '', 'Siqueira', '3', 'Yuri', '3', 'pardaldemaceió', '3', 'vini', '3', 'tia iza', '3']
+Nivel = ['Infeliz', '4', 'Adão', '', 'Veríssimo', '5', 'Kaiser', '', 'Gaspar', '', 'Angel Of The Night', '', 'Lionel', '', 'Romero', '', 'fagner', '', 'egnafer', '', 'jefer', '', 'Siqueira', '3', 'Yuri', '3', 'pardaldemaceió', '3', 'vini', '3', 'tia iza', '3','neto','3']
 
-Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Chefe', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg', 'pardaldemaceió', 'irreg', 'vini', 'irreg', 'tia iza', 'irreg']
+Tags = ['Infeliz', 'Nível 4', 'Adão', 'lixo', 'Veríssimo', 'Chefe', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', 'irreg', 'Yuri', 'irreg', 'pardaldemaceió', 'irreg', 'vini', 'irreg', 'tia iza', 'irreg','neto', 'irreg']
 
 Senhas = ['Infeliz', '6969', 'Adão', 'lixo', 'Veríssimo', 'olhos sempre abertos', 'Kaiser', 'inex', 'Gaspar', 'morto', 'Angel Of The Night', 'inex', 'Lionel', 'morto', 'Romero', 'morto', 'fagner', 'morto', 'egnafer', 'morto', 'jefer', 'morto', 'Siqueira', '270308', 'Yuri', 'gl1.5asp', 'pardaldemaceió', 'senhadopardaldemaceió', 'vini', '071', 'tia iza', '2206','neto','(^^)d']
 
